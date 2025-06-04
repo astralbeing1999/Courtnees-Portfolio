@@ -1,0 +1,246 @@
+/* General Page Styling */
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(
+  135deg,
+  rgba(17, 0, 31, 1) 0%,
+  #0c164f 50%,
+  #ba1e68 100%
+);
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+  text-align: center;
+  font-family: 'DynaPuff', cursive;
+}
+
+
+/* Navbar Styling */
+* {
+  margin: 0;
+  padding: 0;
+  
+}
+
+
+/* Navbar styling */
+.custom-navbar {
+  background: linear-gradient(
+    135deg,
+    #e642f5  0%, 
+    #c11ce6  50%,
+    #660733 100%
+  );
+  margin: 0 auto;  
+  border-radius: 25px;
+  width: 90%;
+  max-width: 500px;
+}
+
+/* Unordered list style */
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 15px;
+  margin: 0;
+  
+  
+}
+
+/* List items and links */
+.nav-list li a {
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+  font-size: 1rem;
+  transition: color 0.3s ease;
+  list-style: none;
+  text-decoration: none;
+}
+
+.nav-list li a:hover {
+  color: #ecb2f1; 
+
+  
+}
+
+/* Show on mobile */
+.navbar-toggler {
+  display: block;
+}
+
+/* Hide on desktop */
+@media (min-width: 768px) {
+  .navbar-toggler {
+    display: none;
+  }
+}
+
+
+
+
+/* Header Welcome styling */
+#header {
+  font-family: 'DynaPuff', cursive;
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 3rem;
+  color: #e642f5;
+  
+}
+
+/* Main Image/Animation */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.bounce {
+  animation: bounce 2s infinite;
+}
+
+
+
+/* Double image container that flips on click*/
+
+.flip-container {
+  perspective: 1000px;
+  width: 300px;
+  height: 300px;
+  margin: 2rem auto;
+  
+}
+
+.flipper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  
+}
+
+.flipped .flipper {
+  transform: rotateY(180deg);
+}
+
+.flip-container.flipped .flipper {
+  transform: rotateY(180deg);
+}
+
+.front, .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  backface-visibility: hidden;
+  top: 0;
+  left: 0;
+  border-radius: 25px;
+  cursor:pointer;
+  
+}
+
+.back {
+  transform: rotateY(180deg);
+
+}
+
+#clickme{
+  color:rgb(136, 127, 255);
+}
+
+
+/* Section Styling */
+
+section {
+  padding: 4rem 1rem;
+  background-color: transparent;
+}
+
+ section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #e642f5; 
+}
+
+section p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+section h3{
+color: #da65f1;
+}
+
+
+/* Intro Section Customization */
+#intro {
+  margin-top: 3rem;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Button / Toggler Icon on Mobile */
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255,255,255,0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+   section h2 {
+    font-size: 1.5rem;
+  }
+
+  section p {
+    font-size: 1rem;
+  }
+}
+
+/*Contact Section*/
+#linksmessage{
+  padding-top: 8px;
+}
+
+
+/*Social Links styling*/
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.social-links a {
+  font-size: 2rem;
+  color: #a3ff78;
+  padding-left: 15px;
+  width:2px;
+  height:2px;
+    
+  background-color:linear-gradient(
+  135deg,
+  rgba(17, 0, 31, 1) 15%,
+  #040a2e 70%,
+  #660733 100%
+);;
+ margin: 0;
+}
+
+.social-links a:hover {
+  color: #f18d2f; 
+}

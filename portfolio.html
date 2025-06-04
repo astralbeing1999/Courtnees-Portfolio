@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Courtnees Portfolio</title>
+</head>
+
+
+<body>
+
+<!-- Navbar -->
+<nav class="custom-navbar">
+  <div class="container-fluid">
+    <button class="navbar-toggler block md:hidden" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <ul class="nav-list">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About me</a></li>
+      <li><a href="#portfolio">My Work</a></li>
+      <li><a href="#contact">Contact me</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Home Section -->
+<section class="bg-light p-4 text-center" id="home">
+  <div class="container">
+    <h1 id="header">Welcome</h1>
+  </div>
+</section>
+
+<div class="flip-container" onclick="flipCard(this)">
+  <div class="flipper">
+    <img class="front" src="IMG_5645.jpg" alt="Bouncing Image" id="bouncingImage" />
+    <img class="back" src="IMG_0777.jpg" alt="Back Image" id="backImage" />
+  </div>
+</div>
+
+<p id="clickme">Click "ME"...</p>
+
+<!-- Intro Section -->
+<section class="container my-5 text-center">
+  <h2>Hi, my name is Courtnee</h2>
+  <p>
+    Welcome to my programming portfolio! I'm a partially self-taught full-stack web developer with a passion for building clean, scalable, and user-focused web applications. From crafting responsive front-end interfaces to architecting robust back-end systems, I enjoy bringing ideas to life through code.
+    My toolkit includes modern technologies like JavaScript, Python, React, Angular, and SQL, along with strong experience in front-end technologies like HTML, CSS and Bootstrap, database design, and cloud deployment.
+    Whether working independently or collaborating with a team, I strive to deliver intuitive digital experiences that solve real-world problems.
+    Feel free to explore my projects below — each one reflects my commitment to code quality, continuous learning, and thoughtful and unique design.
+  </p>
+</section>
+
+
+<!-- About Section -->
+<section class="bg-light p-4 text-center" id="about">
+  <div class="container">
+    <h2>About Me</h2>
+    <p>Welcome to my portfolio! I'm an aspiring full-stack engineer passionate about development & tech and how it can shape the future of our world as we know it!</p>
+  </div>
+</section>
+
+<!-- Portfolio Section -->
+<section class="bg-light p-4 text-center" id="portfolio">
+    <div  class="container">
+    <h2>Portfolio</h2>
+    <p>My Work</p>
+</div>
+ 
+</section>
+
+<!-- Contact Section -->
+<section class="bg-light p-4 text-center" id="contact">
+  <div class="container">
+    <h3>Contact</h3>
+    <p>codenee8@gmail.com</p>
+    <p id="linksmessage">Or click the links below</p>
+  </div>
+</section>
+
+
+<!--Flip card container Script-->
+<script>
+  function flipCard(container) {
+    container.classList.toggle("flipped");
+  }
+</script>
+
+<!-- Social Links Section -->
+<div class="social-links">
+   <a href="https://github.com/astralbeing1999" target="_blank" aria-label="GitHub">
+    <i class="fab fa-github"></i>
+  </a>
+  
+  <a href="https://www.linkedin.com/in/courtnee-smith-8b5510362/" target="_blank" aria-label="LinkedIn">
+    <i class="fab fa-linkedin"></i>
+  </a>
+
+  <a href="https://www.instagram.com/code.nee/" target="_blank" aria-label="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+</div>
+
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const image = document.getElementById('bouncingImage');
+    if (image) {
+      image.classList.add('bounce');
+    }
+  });
+</script>
+
+<script src="script.js"></script>
+</body>
+</html>
